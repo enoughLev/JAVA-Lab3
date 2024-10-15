@@ -4,14 +4,32 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        /// 1
+        System.out.println("1. Counting click on button time's:\n");
+        Button newButton = new Button();
+        int n = 5;
+        for (int i = 0; i < n; i++) newButton.click();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        /// 2
+        System.out.print("\n2. Balance:\n");
+        Balance newBalance = new Balance();
+        newBalance.addLeft(15);
+        newBalance.addRight(15);
+        newBalance.result();
+        newBalance.addRight(15);
+        newBalance.result();
+        newBalance.addLeft(30);
+        newBalance.result();
+
+        /// 3
+        System.out.println("3. Ding-Dong\n");
+        int dindonging = 10;
+        Bell newBell = new Bell();
+        for (int i=0; i<dindonging; i++) {
+            newBell.sound();
         }
+
+        /// 4
+        System.out.println("4. ");
     }
 }
