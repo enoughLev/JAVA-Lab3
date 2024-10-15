@@ -13,8 +13,8 @@ public class Balance {
     }
 
     public void result(){
-        if(leftWeight == rightWeight) System.out.println("\t=");
-        else if (leftWeight < rightWeight) System.out.println("\tR");
-        else System.out.println("\tL");
+        if(leftWeight == rightWeight) System.out.print("= ");
+        else if (leftWeight < rightWeight) System.out.print("R ");
+        else System.out.print("L ");
     }
 }
