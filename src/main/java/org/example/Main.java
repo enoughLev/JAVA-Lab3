@@ -1,16 +1,14 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        /// 1
+        //TIP 1
         System.out.print("\t1. Counting click on button time's:\n");
         Button newButton = new Button();
         int n = 5;
         for (int i = 0; i < n; i++) newButton.click();
 
-        /// 2
+        //TIP 2
         System.out.print("\n\t2. Balance: ");
         Balance newBalance = new Balance();
         newBalance.addLeft(15);
@@ -21,7 +19,7 @@ public class Main {
         newBalance.addLeft(30);
         newBalance.result();
 
-        /// 3
+        //TIP 3
         System.out.print("\n\n\t3. Ding-Dong\n");
         int dindonging = 10;
         Bell newBell = new Bell();
@@ -30,7 +28,7 @@ public class Main {
         }
         System.out.println("\n");
 
-        /// 4
+        //TIP 4
         System.out.print("\t4. Separation the numbers\n");
         int number;
         OddEvenSeparator OddEven = new OddEvenSeparator();
@@ -47,7 +45,7 @@ public class Main {
         OddEven.odd();
         OddEven.even();
 
-        /// 5
+        //TIP 5
         System.out.println("\n\tTable..");
         int rows = 2;
         int columns = 2;
